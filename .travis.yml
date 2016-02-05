@@ -9,5 +9,4 @@ env:
 before_install:
 - docker version
 - sudo pip install -U docker-compose
-- docker-compose -f docker/ci.docker-compose.yml up -d
-- docker exec docker_sfmweiboharvester_1 python -m unittest discover
+- docker-compose -f ci.docker-compose.yml up -d

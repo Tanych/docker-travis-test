@@ -10,11 +10,7 @@ env:
 
 before_install:
 - docker version
-- sudo service docker stop
-- sudo apt-get remove --auto-remove docker
-- sudo rm -rf /var/lib/docker  
-- sudo curl -sSL https://get.docker.com/ | sh
-- sudo service docker start
+- sudo apt-get upgrade docker-engine
 - docker version
 - sudo pip install -U docker-compose==1.5.2
 - docker-compose -f ci.docker-compose.yml up -d

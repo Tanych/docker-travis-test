@@ -13,8 +13,7 @@ before_install:
 - sudo pip install -U docker-compose
 - docker-compose -f ci.docker-compose.yml up -d
 
-scirpt:
-- python helloworld.py -m py.test tests/test_helloworld.py
+scirpt: python -m unittest discover
 
 
 

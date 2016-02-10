@@ -16,7 +16,7 @@ before_install:
 - sudo pip install -U docker-compose
 - docker-compose -f ci.docker-compose.yml up -d
 
-scirpt: python -m unittest discover
+script: python -m unittest discover
 
 
 
